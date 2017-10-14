@@ -11,12 +11,13 @@ RSpec.describe Underarmour do
   end
 
   describe 'Using an ApiClient allows us to fetch a User' do
-    let(:access_token) { 'blabla' }
+    let(:access_token) { 'access_token_returned_from_ua' }
+    let(:api_key) {'client_id_provided_by_ua'}
 
     it 'returns a user' do
-      StubApi::User.find
-      user = Underarmour::ApiClient.new(access_token: access_token).find(1)
-      expect(user).to eq 'blabla'
+      StubApi::User.find_self
+      user = Underarmour::ApiClient.new(access_token: access_token, api_key: api_key).find_self
+      expect(user['first_name']).to eq 'Oswald'
     end
   end
 end

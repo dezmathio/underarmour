@@ -4,8 +4,8 @@ include WebMock::API
 module StubApi
   class User
     class << self
-      def find
-        json = JSON.parse(File.read('./spec/responses/user_find_self.json'))
+      def find_self
+        json = JSON.parse(File.read('./spec/responses/user_find_self.json').to_json)
 
         stub_request(:get, 'http://api.ua.com/v7.1/user/1')
           .with(headers: headers)

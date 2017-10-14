@@ -18,5 +18,10 @@ module Underarmour
       response = get("user/#{id}")
       User.new(response.body)
     end
+
+    def find_self
+      response = get("user/self")
+      User.new(response.body)
+    end
   end
 end
