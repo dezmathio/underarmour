@@ -31,5 +31,11 @@ RSpec.describe Underarmour do
 
       end
     end
+    context '#user_profile_photo' do
+      
+      xit 'returns a user_profile_photo with a small image reference' do
+
+      end
+    end
   end
 end
