@@ -4,6 +4,7 @@ module Underarmour
   class BaseClient
     def initialize(options = {})
       @access_token = options[:access_token]
+      @api_key = options[:api_key]
     end
 
     def post(path, _headers = {})
@@ -18,6 +19,7 @@ module Underarmour
 
     def headers
       {
+        'Api-Key' => @api_key,
         Authorization: "Bearer #{@access_token}",
         'Content-Type' => 'application/json'
       }

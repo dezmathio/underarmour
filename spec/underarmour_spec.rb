@@ -1,4 +1,5 @@
 require "spec_helper"
+require './spec/stubs/stub_api.rb'
 
 RSpec.describe Underarmour do
   it "has a version number" do
@@ -17,4 +18,5 @@ RSpec.describe Underarmour do
       user = Underarmour::ApiClient.new(access_token: access_token).find(1)
       expect(user).to eq 'blabla'
     end
+  end
 end

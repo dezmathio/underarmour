@@ -1,0 +1,151 @@
+{
+last_name: "Cobblepot",
+weight: 75.95498406,
+communication: {
+promotions: false,
+newsletter: false,
+system_messages: false
+},
+height: 1.8542,
+hobbies: "",
+id: 1,
+date_joined: "2017-05-03T18:45:43+00:00",
+first_name: "Oswald",
+display_name: "Penguin",
+introduction: "",
+display_measurement_system: "imperial",
+last_login: "2017-05-03T18:45:43+00:00",
+goal_statement: null,
+_links: {
+stats: [
+{
+href: "/v7.1/user_stats/1/?aggregate_by_period=month",
+id: "1",
+name: "month"
+},
+{
+href: "/v7.1/user_stats/1/?aggregate_by_period=day",
+id: "1",
+name: "day"
+},
+{
+href: "/v7.1/user_stats/1/?aggregate_by_period=week",
+id: "1",
+name: "week"
+},
+{
+href: "/v7.1/user_stats/1/?aggregate_by_period=year",
+id: "1",
+name: "year"
+},
+{
+href: "/v7.1/user_stats/1/?aggregate_by_period=lifetime",
+id: "1",
+name: "lifetime"
+}
+],
+privacy: [
+{
+href: "/v7.1/privacy_option/0/",
+id: "0",
+name: "workout_music"
+},
+{
+href: "/v7.1/privacy_option/1/",
+id: "1",
+name: "workout"
+},
+{
+href: "/v7.1/privacy_option/3/",
+id: "3",
+name: "activity_feed"
+},
+{
+href: "/v7.1/privacy_option/0/",
+id: "0",
+name: "bodymass"
+},
+{
+href: "/v7.1/privacy_option/1/",
+id: "1",
+name: "food_log"
+},
+{
+href: "/v7.1/privacy_option/3/",
+id: "3",
+name: "email_search"
+},
+{
+href: "/v7.1/privacy_option/3/",
+id: "3",
+name: "profile"
+},
+{
+href: "/v7.1/privacy_option/1/",
+id: "1",
+name: "route"
+},
+{
+href: "/v7.1/privacy_option/0/",
+id: "0",
+name: "sleep"
+}
+],
+image: [
+{
+href: "/v7.1/user_profile_photo/1/",
+id: "1",
+name: "user_profile_photo"
+}
+],
+documentation: [
+{
+href: "https://developer.underarmour.com/docs/v71_User"
+}
+],
+deactivation: [
+{
+href: "/v7.1/user_deactivation/"
+}
+],
+user_achievements: [
+{
+href: "/v7.1/user_achievement/?user=1"
+}
+],
+friendships: [
+{
+href: "/v7.1/friendship/?from_user=1"
+}
+],
+workouts: [
+{
+href: "/v7.1/workout/?user=1&order_by=-start_datetime"
+}
+],
+self: [
+{
+href: "/v7.1/user/1/",
+id: "1"
+}
+]
+},
+email: "penguin-gotham@gmail.com",
+location: {
+country: "US",
+region: "DC",
+locality: "Washington",
+address: ""
+},
+username: "Oswald1",
+sharing: {
+twitter: false,
+facebook: false
+},
+last_initial: "A.",
+preferred_language: "en-US",
+gender: "M",
+time_zone: "America/New_York",
+birthdate: "1987-10-19",
+profile_statement: ""
+}
