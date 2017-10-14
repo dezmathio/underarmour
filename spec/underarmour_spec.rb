@@ -16,7 +16,7 @@ RSpec.describe Underarmour do
 
     it 'returns a user' do
       StubApi::User.find_self
-      user = Underarmour::ApiClient.new(access_token: access_token, api_key: api_key).find_self
+      user = Underarmour::ApiClient.scoped_api_client(Underarmour::User, 'user/', access_token: access_token, api_key: api_key).find_self
       expect(user.first_name).to eq 'Oswald'
     end
   end
