@@ -1,10 +1,10 @@
 module Underarmour
   module User
-    class UserProfilePhoto
+    class UserRole
       
       # https://developer.underarmour.com/docs/v71_User_Profile_Photo/
 
-      attr_accessor :small, :medium, :large
+      attr_accessor :desc, :total_count
 
       def initialize(json)
         decode_user_profile_photo(json)
@@ -14,8 +14,10 @@ module Underarmour
 
       def decode_user_profile_photo(json)
         self.small = json['small']
-        self.medium = json['medium']
         self.large = json['large']
+        self.self = json['self'] # not sure if this is necessary really
+        self.medium = json['medium']
+        self.documentation = json['documentation']
         self
       end
     end
