@@ -21,6 +21,7 @@ RSpec.describe Underarmour do
         expect(user.first_name).to eq 'Oswald'
       end
     end
+    
     context '#privacy_option' do
       
       xit 'returns a privacy option description' do
@@ -31,9 +32,17 @@ RSpec.describe Underarmour do
 
       end
     end
+    
     context '#user_profile_photo' do
       
       xit 'returns a user_profile_photo with a small image reference' do
+
+      end
+    end
+
+    context '#user_role' do
+      
+      xit 'returns a user_role with role & a user reference' do
 
       end
     end
