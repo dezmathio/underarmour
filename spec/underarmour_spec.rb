@@ -46,5 +46,12 @@ RSpec.describe Underarmour do
 
       end
     end
+
+    context '#user_stats' do
+      
+      xit 'returns an array of stats with aggregation data' do
+
+      end
+    end
   end
 end

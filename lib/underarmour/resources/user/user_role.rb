@@ -2,7 +2,7 @@ module Underarmour
   module User
     class UserRole
       
-      # https://developer.underarmour.com/docs/v71_User_Profile_Photo/
+      # https://developer.underarmour.com/docs/v71_User_Role/
 
       attr_accessor :role
 
