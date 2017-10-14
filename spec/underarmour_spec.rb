@@ -53,5 +53,11 @@ RSpec.describe Underarmour do
 
       end
     end
+
+    context '#activity_type' do
+      xit 'returns an activity_type' do
+
+      end
+    end
   end
 end
