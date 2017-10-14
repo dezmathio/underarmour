@@ -1,5 +1,7 @@
 require "bundler/setup"
 require "underarmour"
+require 'pry'
+require 'webmock'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
