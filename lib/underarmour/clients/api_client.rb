@@ -21,7 +21,8 @@ module Underarmour
 
     def find_self
       response = get("user/self")
-      User.new(response.body)
+      hash = JSONConverter.to_hash(response.body)
+      User.new(hash)
     end
   end
 end
