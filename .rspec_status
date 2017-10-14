@@ -1,5 +1,0 @@
-example_id                        | status | run_time        |
---------------------------------- | ------ | --------------- |
-./spec/underarmour_spec.rb[1:1]   | passed | 0.00079 seconds |
-./spec/underarmour_spec.rb[1:2]   | passed | 0.00069 seconds |
-./spec/underarmour_spec.rb[1:3:1] | failed | 0.00021 seconds |
