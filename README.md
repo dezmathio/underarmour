@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ```ruby
 
-client = Underarmour::Client.new(access_token: 'YOUR_TOKEN')
+client = Underarmour::Client.new(access_token: 'YOUR_TOKEN', api_key: 'YOUR_CLIENT_API_KEY')
 client.users.find(id: 1)
 
 ```
@@ -31,7 +31,7 @@ client.users.find(id: 1)
 
 ```ruby
 
-client = Underarmour::Client.new(access_token: 'YOUR_TOKEN')
+client = Underarmour::Client.new(access_token: 'YOUR_TOKEN', api_key: 'YOUR_CLIENT_API_KEY')
 client.activity_types.all
 
 ```
