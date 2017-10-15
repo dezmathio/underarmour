@@ -21,6 +21,7 @@ You need to have access_key and api_key from the Under Armour API. This can be r
     https://developer.underarmour.com/signup
 
 Your application needs to pass these keys to the underarmour gem by using dotenv. In your Gemfile add,
+
 ``` gem 'dotenv-rails' ```
 
 Add the keys to the file .env in the repo home. The contents of the .env file will look like 
