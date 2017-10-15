@@ -71,10 +71,15 @@ RSpec.describe Underarmour do
 
       end
     end
-  end
     context '#allday_activity_timeseries' do
       xit 'returns an allday_activity_timeseries' do
 
       end
     end
+    context '#allday_activity' do
+      xit 'returns an allday_activity' do
+
+      end
+    end
+  end
 end
