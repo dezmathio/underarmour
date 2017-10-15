@@ -65,5 +65,11 @@ RSpec.describe Underarmour do
 
       end
     end
+
+    context '#aggregate' do
+      xit 'returns an aggregate' do
+
+      end
+    end
   end
 end
