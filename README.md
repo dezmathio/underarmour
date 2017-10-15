@@ -15,7 +15,28 @@ And then execute:
 Or install it yourself as:
 
     $ gem install underarmour
+    
+## Setup Key Access from UnderArmour API for your app
+You need to have access_key and api_key from the Under Armour API. This can be received from,
+    https://developer.underarmour.com/signup
 
+Your application needs to pass these keys to the underarmour gem by using dotenv. In your Gemfile add,
+
+``` gem 'dotenv-rails' ```
+
+Add the keys to the file .env in the repo home. The contents of the .env file will look like 
+
+```
+access_token=<your-value>
+api_key=<your-value>
+```
+
+In your client code, include the following,
+
+``` require 'dotenv/load' ```
+
+Now you should be able to access the environment variable set in .env by using ENV['access_token'] and ENV['api_key']
+    
 ## Usage
 
 ### Retrieve a User
