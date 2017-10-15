@@ -59,5 +59,11 @@ RSpec.describe Underarmour do
 
       end
     end
+
+    context '#actigraphy' do
+      xit 'returns an actigraphy' do
+
+      end
+    end
   end
 end
