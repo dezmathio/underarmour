@@ -81,5 +81,11 @@ RSpec.describe Underarmour do
 
       end
     end
+    context '#bodymass' do
+      xit 'returns a bodymass' do
+
+      end
+    end
+
   end
 end
