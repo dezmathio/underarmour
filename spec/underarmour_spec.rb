@@ -59,5 +59,37 @@ RSpec.describe Underarmour do
 
       end
     end
+
+    context '#actigraphy' do
+      xit 'returns an actigraphy' do
+
+      end
+    end
+
+    context '#aggregate' do
+      xit 'returns an aggregate' do
+
+      end
+    end
+    context '#allday_activity_timeseries' do
+      xit 'returns an allday_activity_timeseries' do
+
+      end
+    end
+    context '#allday_activity' do
+      xit 'returns an allday_activity' do
+
+      end
+    end
+    context '#bodymass' do
+      xit 'returns a bodymass' do
+
+      end
+    end
+    context '#sleep' do
+      xit 'returns a sleep' do
+
+      end
+    end
   end
 end
