@@ -29,9 +29,11 @@ module Underarmour
       end
     end
 
-    def find(id)
+    def find(id = nil)
       response = get("#{@path}/#{id}")
-      @class_name.new(response.body)
+      binding.pry
+      hash = JSONConverter.to_hash(response.body)
+      @class_name.new(hash)
     end
 
     def find_self

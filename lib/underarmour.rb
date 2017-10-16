@@ -10,3 +10,5 @@ require 'underarmour/json_converter'
 
 # User
 require 'underarmour/resources/user'
+require 'underarmour/resources/user/privacy_option'
+require 'underarmour/resources/user/user_profile_photo'
