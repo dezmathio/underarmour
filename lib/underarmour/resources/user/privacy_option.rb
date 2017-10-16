@@ -12,6 +12,7 @@ module Underarmour
     private
 
     def decode_privacy_option(json)
+      # @TODO: fix this to work with collections
       self.links = json['_links']
       self.embedded = json['_embedded']
       self.total_count = json['total_count']

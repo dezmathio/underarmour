@@ -12,7 +12,7 @@ module Underarmour
     private
 
     def decode_user_profile_photo(json)
-      binding.pry
+      # @TODO: fix this to work with collections
       self.small = json['small']
       self.medium = json['medium']
       self.large = json['large']

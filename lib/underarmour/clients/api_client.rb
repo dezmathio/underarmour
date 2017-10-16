@@ -19,6 +19,7 @@ module Underarmour
       super(options)
     end
 
+    # @TODO: Implement params here so we can do actigraphy w/ ?start_date=
     def all
       [].tap do |f|
         response = get("#{@path}/")
@@ -30,8 +31,7 @@ module Underarmour
     end
 
     def find(id = nil)
-      response = get("#{@path}/#{id}")
-      binding.pry
+      response = get("#{@path}/#{id}/")
       hash = JSONConverter.to_hash(response.body)
       @class_name.new(hash)
     end

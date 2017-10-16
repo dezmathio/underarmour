@@ -27,15 +27,12 @@ module Underarmour
     
     #class << self
     def all
-      json = "{ herp: 'derp' }"
-      #json = JSON.parse(File.read("./spec/responses/#{json_path_helper}.json"))
-      [].tap do |f|
-        response = get("#{@path}/")
-        resource_items = JSONConverter.to_hash(response.body)
-        resource_items.each do |resource|
-          f << @class_name.new(resource)
-        end
-      end
+      #json = JSON.parse(File.read("./spec/responses/#{json_path_helper}_all.json"))
+      json = JSON.parse(File.read("./spec/responses/#{json_path_helper}.json"))
+
+      stub_request(:get, URI.parse("https://api.ua.com/v7.1/#{@path}/"))
+        .with(headers: headers)
+        .to_return(status: 200, body: json)
     end
 
     def find_self
@@ -47,10 +44,9 @@ module Underarmour
     end
 
     def find(id = nil)
-      json = "{ herp: 'derp' }"
-      #json = JSON.parse(File.read("./spec/responses/#{json_path_helper}.json"))
+      json = JSON.parse(File.read("./spec/responses/#{json_path_helper}.json"))
 
-      stub_request(:get, URI.parse("https://api.ua.com/v7.1/#{@path}/#{id}"))
+      stub_request(:get, URI.parse("https://api.ua.com/v7.1/#{@path}/#{id}/"))
         .with(headers: headers)
         .to_return(status: 200, body: json)
     end
