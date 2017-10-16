@@ -1,5 +1,9 @@
 # Underarmour
 
+## Disclaimer
+
+This is very much still a work in progress & likely to change, feel free to contribute however you find fit.
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -43,23 +47,21 @@ Now you should be able to access the environment variable set in .env by using E
 
 ```ruby
 
-client = Underarmour::Client.new(access_token: 'YOUR_TOKEN', api_key: 'YOUR_CLIENT_API_KEY')
-client.users.find(id: 1)
+user = Underarmour::ApiClient.scoped_api_client(Underarmour::User, 'user/', access_token: 'YOUR_TOKEN', api_key: 'YOUR_CLIENT_API_KEY').find_self
 
 ```
 
-### Retrieve ActivityTypes
+### Retrieve an ActivityType
 
 ```ruby
 
-client = Underarmour::Client.new(access_token: 'YOUR_TOKEN', api_key: 'YOUR_CLIENT_API_KEY')
-client.activity_types.all
+activity_type = Underarmour::ApiClient.scoped_api_client(Underarmour::ActivityType, 'activity_type/',access_token: 'YOUR_TOKEN', api_key: 'YOUR_CLIENT_API_KEY').find(215)
 
 ```
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/underarmour. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/dezmathio/underarmour. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
