@@ -1,5 +1,7 @@
 # Underarmour
 
+A ruby wrapper for the Under Armour API
+
 ## Disclaimer
 
 This is very much still a work in progress & likely to change, feel free to contribute however you find fit.
